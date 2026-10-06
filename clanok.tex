@@ -9,8 +9,10 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
+\usepackage{wrapfig}
+\usepackage{amsmath}
 \usepackage{cite}
+\usepackage{mathtools}
 %\usepackage{times}
 
 \pagestyle{headings}
@@ -46,6 +48,10 @@ Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlen
 Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
 Záverečné poznámky prináša časť~\ref{zaver}.
 
+\begin{figure*}
+	\centering\includegraphics{diagram 1.png}
+	\caption{Obr.1}
+\end{figure*}
 
 
 \section{Nejaká časť} \label{nejaka}
@@ -60,6 +66,14 @@ Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný pláva
 \label{f:rozhod}
 \end{figure*}
 
+\begin{wrapfigure}{r}{0.75\textwidth}
+\centering
+\includegraphics[width=0.75\textwidth]{stu.png}
+\end{wrapfigure}
+\begin{wrapfigure}{l}{0.75\textwidth}
+\centering
+\includegraphics[width=0.75\textwidth]{stu.png}
+\end{wrapfigure}
 
 
 \section{Iná časť} \label{ina}
@@ -94,6 +108,7 @@ Ten istý zoznam, len číslovaný:
 \end{enumerate}
 
 
+
 \subsection{Ešte nejaké vysvetlenie} \label{ina:este}
 
 \paragraph{Veľmi dôležitá poznámka.}
@@ -103,7 +118,8 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 \section{Dôležitá časť} \label{dolezita}
 
-
+\includegraphics[width=0.48\textwidth]{diagram 1.png}\hfill
+\includegraphics[width=0.48\textwidth]{diagram 2.png}
 
 
 \section{Ešte dôležitejšia časť} \label{dolezitejsia}
@@ -112,6 +128,13 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 \section{Záver} \label{zaver} % prípadne iný variant názvu
+
+\begin{displaymath}
+\begin{pmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{pmatrix}
+\end{displaymath}
 
 
 
